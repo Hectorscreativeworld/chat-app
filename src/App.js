@@ -3,7 +3,14 @@ import HelloWorld from './components/HelloWorld'
 
 class App extends Component {
   render() {
-    return <HelloWorld />
+    return (
+      <div className="app">
+        <RoomList />
+        <MessageList />
+        <SendMessageForm />
+        <NewRoomForm />
+      </div>
+    )
   }
 }
 
